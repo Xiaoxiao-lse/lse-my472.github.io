@@ -14,8 +14,6 @@ library("rtweet")
 library("tidyverse")
 library("maps")
 library("stringr")
-library("maps")
-
 # Function which allows to recover corrupted tweet jsons returned by rtweet
 # Discussion: https://github.com/ropensci/rtweet/issues/356
 source("https://gist.githubusercontent.com/JBGruber/dee4c44e7d38d537426f57ba1e4f84ab/raw/ce28d3e8115f9272db867158794bc710e8e28ee5/recover_stream.R")
@@ -34,7 +32,7 @@ authentication <- list(consumer_key = "jjzLLmoXLm8GwrRLL7LSVrMsf",
 
 A more convenient approach could be to store this list once after you have pasted your keys and then to reload it when running some code. Store the list once with:
 
-```{r}
+```{t}
 save(authentication, file = "authentication.rda")
 ```
 
